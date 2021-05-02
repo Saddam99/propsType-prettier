@@ -37,3 +37,6 @@
     border-color: cornflowerblue;
     padding: 10px;
 }
+.selected {
+    background-color: cornflowerblue;
+}

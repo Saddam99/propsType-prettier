@@ -5,15 +5,15 @@ import {setFilterPhoto} from "../redux/actions";
 function Photos() {
     const dispatch = useDispatch();
 
-    const photos = useSelector(state => state.photos);
-    const selectedAlbumsId = useSelector(state => state.selectedAlbumsId);
-    const filter = useSelector(state => state.filter);
+    const photos = useSelector(state => state.photos.photos);
+    const selectedAlbumsId = useSelector(state => state.albums.selected);
+    const filter = useSelector(state => state.photos.filter);
 
 
     const filterAlbums = photos
         .filter((photo) => photo.albumId === selectedAlbumsId)
-        .filter(photo => {
-            if (photo.id > filter) {
+        .filter((photo, index) => {
+            if (index >= filter ) {
                 return false
             }
             return true

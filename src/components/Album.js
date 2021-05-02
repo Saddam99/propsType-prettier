@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {selectAlbum} from "../redux/actions";
 
 function Album(props) {
@@ -9,8 +9,11 @@ function Album(props) {
         dispatch(selectAlbum(props.album.id))
     }
 
+    const selected = useSelector(state => state.albums.selected)
+
+
     return (
-        <div className='album' onClick={handleSelectAlbum}>
+        <div className={`album ${selected === props.album.id ? 'selected' : ''}`} onClick={handleSelectAlbum}>
             {props.album.title}
         </div>
     );
