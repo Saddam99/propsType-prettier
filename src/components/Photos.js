@@ -13,7 +13,7 @@ function Photos() {
     const filterAlbums = photos
         .filter((photo) => photo.albumId === selectedAlbumsId)
         .filter((photo, index) => {
-            if (index >= filter ) {
+            if (index >= filter && filter !== '' ) {
                 return false
             }
             return true
