@@ -26,7 +26,7 @@ function Photos() {
     if (selectedAlbumsId === null) {
         return (
             <div className='no-use-selected'>
-                yyyyyyyyyy
+                <span>&lArr; выбор альбома</span>
             </div>
         )
     }
@@ -35,7 +35,7 @@ function Photos() {
         <div className='photos'>
             <div>
                 <input type="number"
-                       placeholder='фильтер картинок: от 1 до 50'
+                       placeholder='фильтр картинок: от 1 до 50'
                        value={filter}
                        onChange={handleChangeFilter}
                 />

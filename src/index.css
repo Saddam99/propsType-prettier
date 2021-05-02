@@ -16,10 +16,14 @@
     box-shadow: 1px 1px 5px 0;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .no-use-selected {
     margin: auto;
+    border: 1px solid cornflowerblue;
+    padding: 10px;
+    font-size: 30px;
 }
 .photos {
     width: 65%;
@@ -30,4 +34,6 @@
 }
 .photos input {
     width: 300px;
+    border-color: cornflowerblue;
+    padding: 10px;
 }
