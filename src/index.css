@@ -1,42 +1,41 @@
-
 .container {
-    width: 1100px;
-    margin: auto;
+  width: 1100px;
+  margin: auto;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .albums {
-    width: 30%;
+  width: 30%;
 }
 .album {
-    border: 1px solid cornflowerblue;
-    padding: 10px 10px;
-    margin: 10px 0;
-    box-shadow: 1px 1px 5px 0;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+  border: 1px solid cornflowerblue;
+  padding: 10px 10px;
+  margin: 10px 0;
+  box-shadow: 1px 1px 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .no-use-selected {
-    margin: auto;
-    border: 1px solid cornflowerblue;
-    padding: 10px;
-    font-size: 30px;
+  margin: auto;
+  border: 1px solid cornflowerblue;
+  padding: 10px;
+  font-size: 30px;
 }
 .photos {
-    width: 65%;
+  width: 65%;
 }
 .photo {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .photos input {
-    width: 300px;
-    border-color: cornflowerblue;
-    padding: 10px;
+  width: 300px;
+  border-color: cornflowerblue;
+  padding: 10px;
 }
 .selected {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
